@@ -10,50 +10,50 @@
 
 <meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge"><meta data-react-helmet="true" property="og:title" content="Posts tagged &quot;数据库&quot; | LJ&#x27;s Blog"><meta data-react-helmet="true" name="description" content="Blog | Tagged &quot;数据库&quot;"><meta data-react-helmet="true" property="og:description" content="Blog | Tagged &quot;数据库&quot;"><meta data-react-helmet="true" name="twitter:card" content="summary">
 
-<link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico">
+<link data-react-helmet="true" rel="shortcut icon" href="/Blogimg/favicon.ico">
 
 
-<link rel="stylesheet" href="/styles.86f508d4.css">
+<link rel="stylesheet" href="/Blogstyles.86f508d4.css">
 
 
-<link rel="preload" href="/styles.5a7d0707.js" as="script">
+<link rel="preload" href="/Blogstyles.ef0236f1.js" as="script">
 
-<link rel="preload" href="/runtime~main.9d276184.js" as="script">
+<link rel="preload" href="/Blogruntime~main.e0e621b0.js" as="script">
 
-<link rel="preload" href="/main.1de75483.js" as="script">
+<link rel="preload" href="/Blogmain.6f58d969.js" as="script">
 
-<link rel="preload" href="/common.40a288d1.js" as="script">
+<link rel="preload" href="/Blogcommon.40a288d1.js" as="script">
 
-<link rel="preload" href="/2.4d1ea9f4.js" as="script">
+<link rel="preload" href="/Blog2.4d1ea9f4.js" as="script">
 
-<link rel="preload" href="/6875c492.3bcd09ce.js" as="script">
+<link rel="preload" href="/Blog6875c492.047e6c97.js" as="script">
 
-<link rel="preload" href="/c9f1a413.8ee05dcd.js" as="script">
+<link rel="preload" href="/Blogc9f1a413.9d1518da.js" as="script">
 
-<link rel="preload" href="/1a981dc6.d2245a12.js" as="script">
+<link rel="preload" href="/Blog9959d5be.b860dcd2.js" as="script">
 
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=window.matchMedia("(prefers-color-scheme: dark)"),n=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();null!==n?t(n):e.matches&&t("dark")}()</script>
 <div id="__docusaurus">
-<nav class="navbar navbar--light navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><div aria-label="Navigation bar toggle" class="navbar__toggle" role="button" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></div><a aria-current="page" class="navbar__brand active" href="/"><img class="navbar__logo" src="/img/logo.svg" alt="LJ&#x27;s Blog Logo"><strong class="navbar__title">LJ&#x27;s Blog</strong></a></div><div class="navbar__items navbar__items--right"><a class="navbar__item navbar__link" target="_blank" rel="noopener noreferrer" href="https://github.com/SilenceAndSmile">My GitHub</a><div class="react-toggle react-toggle--disabled displayOnlyInLargeViewport_1gtM"><div class="react-toggle-track"><div class="react-toggle-track-check"><span class="toggle_keGJ moon_1gwN"></span></div><div class="react-toggle-track-x"><span class="toggle_keGJ sun_3CPA"></span></div></div><div class="react-toggle-thumb"></div><input type="checkbox" disabled="" aria-label="Dark mode toggle" class="react-toggle-screenreader-only"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div><div class="navbar-sidebar"><div class="navbar-sidebar__brand"><a aria-current="page" class="navbar__brand active" href="/"><img class="navbar__logo" src="/img/logo.svg" alt="LJ&#x27;s Blog Logo"><strong class="navbar__title">LJ&#x27;s Blog</strong></a></div><div class="navbar-sidebar__items"><div class="menu"><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" target="_blank" rel="noopener noreferrer" href="https://github.com/SilenceAndSmile">My GitHub</a></li></ul></div></div></div></nav><div class="main-wrapper"><div class="container margin-vert--xl"><div class="row"><div class="col col--8 col--offset-2"><h1>1 post tagged with &quot;数据库&quot;</h1><a aria-current="page" class="active" href="/tags">View All Tags</a><div class="margin-vert--xl"><article class="margin-bottom--xl"><header><h2 class="margin-bottom--sm blogPostTitle_2RZH"><a href="/2020/04/01/postgresql_build">Ubuntu下PostgreSQL编译安装</a></h2><div class="margin-bottom--sm"><time datetime="2020-04-01T12:34:31.179Z" class="blogPostDate_3tRe">April 1, 2020</time></div><div class="avatar margin-bottom--md"><a class="avatar__photo-link" href="https://github.com/silenceandsmile" target="_blank" rel="noreferrer noopener"><img class="avatar__photo" src="https://avatars2.githubusercontent.com/u/32271071?s=460&amp;v=4" alt="默一抹浅笑"></a><div class="avatar__intro"><h4 class="avatar__name"><a href="https://github.com/silenceandsmile" target="_blank" rel="noreferrer noopener">默一抹浅笑</a></h4><small class="avatar__subtitle"></small></div></div></header><section class="markdown"><p>在开源数据库领域, PostgreSQL(PG)显然是极其重要的存在(毕竟是<a href="https://www.google.com/search?q=postgresql">&quot;世界上最先进的开源数据库&quot;</a>). 本文是三年前在<strong>全新Ubuntu 16.04 LTS</strong> (是的, 当时装好Ubuntu正式做的第一件事就是编PG) 下编译安装PG的简要记录. </p><p>自己今天再看, 本文无疑显得基础与简单. 但我至今仍记得当时运行起来时自己内心的喜悦 (虽然过程比之在Windows下编译PG要顺利许多, 只可惜Windows的过程当时没有及时总结). 从装个Ubuntu都一波三折到整日与terminal打交道, 美好的大学时光仿佛就在昨日. 选本文作为第一篇博客或许正是内心下意识的一种自发怀念.</p></section><footer class="row margin-vert--lg"><div class="col"><strong>Tags:</strong><a class="margin-horiz--sm" href="/tags/技术">技术</a><a aria-current="page" class="margin-horiz--sm active" href="/tags/数据库">数据库</a><a class="margin-horiz--sm" href="/tags/postgre-sql">PostgreSQL</a></div><div class="col text--right"><a aria-label="Read more about Ubuntu下PostgreSQL编译安装" href="/2020/04/01/postgresql_build"><strong>Read More</strong></a></div></footer></article></div></div></div></div></div><footer class="footer footer--dark"><div class="container"><div class="text--center"><div>Copyright © 2020. Built with Docusaurus.</div></div></div></footer>
+<nav class="navbar navbar--light navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><div aria-label="Navigation bar toggle" class="navbar__toggle" role="button" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></div><a aria-current="page" class="navbar__brand active" href="/Blog"><img class="navbar__logo" src="/Blogimg/logo.svg" alt="LJ&#x27;s Blog Logo"><strong class="navbar__title">LJ&#x27;s Blog</strong></a></div><div class="navbar__items navbar__items--right"><a class="navbar__item navbar__link" target="_blank" rel="noopener noreferrer" href="https://github.com/SilenceAndSmile">My GitHub</a><div class="react-toggle react-toggle--disabled displayOnlyInLargeViewport_1gtM"><div class="react-toggle-track"><div class="react-toggle-track-check"><span class="toggle_keGJ moon_1gwN"></span></div><div class="react-toggle-track-x"><span class="toggle_keGJ sun_3CPA"></span></div></div><div class="react-toggle-thumb"></div><input type="checkbox" disabled="" aria-label="Dark mode toggle" class="react-toggle-screenreader-only"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div><div class="navbar-sidebar"><div class="navbar-sidebar__brand"><a aria-current="page" class="navbar__brand active" href="/Blog"><img class="navbar__logo" src="/Blogimg/logo.svg" alt="LJ&#x27;s Blog Logo"><strong class="navbar__title">LJ&#x27;s Blog</strong></a></div><div class="navbar-sidebar__items"><div class="menu"><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" target="_blank" rel="noopener noreferrer" href="https://github.com/SilenceAndSmile">My GitHub</a></li></ul></div></div></div></nav><div class="main-wrapper"><div class="container margin-vert--xl"><div class="row"><div class="col col--8 col--offset-2"><h1>1 post tagged with &quot;数据库&quot;</h1><a aria-current="page" class="active" href="/Blog/tags">View All Tags</a><div class="margin-vert--xl"><article class="margin-bottom--xl"><header><h2 class="margin-bottom--sm blogPostTitle_2RZH"><a href="/Blog//2020/04/01/postgresql_build">Ubuntu下PostgreSQL编译安装</a></h2><div class="margin-bottom--sm"><time datetime="2020-04-01T12:34:31.179Z" class="blogPostDate_3tRe">April 1, 2020</time></div><div class="avatar margin-bottom--md"><a class="avatar__photo-link" href="https://github.com/silenceandsmile" target="_blank" rel="noreferrer noopener"><img class="avatar__photo" src="https://avatars2.githubusercontent.com/u/32271071?s=460&amp;v=4" alt="默一抹浅笑"></a><div class="avatar__intro"><h4 class="avatar__name"><a href="https://github.com/silenceandsmile" target="_blank" rel="noreferrer noopener">默一抹浅笑</a></h4><small class="avatar__subtitle"></small></div></div></header><section class="markdown"><p>在开源数据库领域, PostgreSQL(PG)显然是极其重要的存在(毕竟是<a href="https://www.google.com/search?q=postgresql">&quot;世界上最先进的开源数据库&quot;</a>). 本文是三年前在<strong>全新Ubuntu 16.04 LTS</strong> (是的, 当时装好Ubuntu正式做的第一件事就是编PG) 下编译安装PG的简要记录. </p><p>自己今天再看, 本文无疑显得基础与简单. 但我至今仍记得当时运行起来时自己内心的喜悦 (虽然过程比之在Windows下编译PG要顺利许多, 只可惜Windows的过程当时没有及时总结). 从装个Ubuntu都一波三折到整日与terminal打交道, 美好的大学时光仿佛就在昨日. 选本文作为第一篇博客或许正是内心下意识的一种自发怀念.</p></section><footer class="row margin-vert--lg"><div class="col"><strong>Tags:</strong><a class="margin-horiz--sm" href="/Blog/tags/技术">技术</a><a aria-current="page" class="margin-horiz--sm active" href="/Blog/tags/数据库">数据库</a><a class="margin-horiz--sm" href="/Blog/tags/postgre-sql">PostgreSQL</a></div><div class="col text--right"><a aria-label="Read more about Ubuntu下PostgreSQL编译安装" href="/Blog//2020/04/01/postgresql_build"><strong>Read More</strong></a></div></footer></article></div></div></div></div></div><footer class="footer footer--dark"><div class="container"><div class="text--center"><div>Copyright © 2020. Built with Docusaurus.</div></div></div></footer>
 </div>
 
-<script src="/styles.5a7d0707.js"></script>
+<script src="/Blogstyles.ef0236f1.js"></script>
 
-<script src="/runtime~main.9d276184.js"></script>
+<script src="/Blogruntime~main.e0e621b0.js"></script>
 
-<script src="/main.1de75483.js"></script>
+<script src="/Blogmain.6f58d969.js"></script>
 
-<script src="/common.40a288d1.js"></script>
+<script src="/Blogcommon.40a288d1.js"></script>
 
-<script src="/2.4d1ea9f4.js"></script>
+<script src="/Blog2.4d1ea9f4.js"></script>
 
-<script src="/6875c492.3bcd09ce.js"></script>
+<script src="/Blog6875c492.047e6c97.js"></script>
 
-<script src="/c9f1a413.8ee05dcd.js"></script>
+<script src="/Blogc9f1a413.9d1518da.js"></script>
 
-<script src="/1a981dc6.d2245a12.js"></script>
+<script src="/Blog9959d5be.b860dcd2.js"></script>
 
 
 </body>
