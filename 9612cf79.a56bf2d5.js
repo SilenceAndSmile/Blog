@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[16],{117:function(s){s.exports=JSON.parse('{"allTagsPath":"/tags","slug":"gis","name":"gis","count":1,"permalink":"/tags/gis"}')}}]);
